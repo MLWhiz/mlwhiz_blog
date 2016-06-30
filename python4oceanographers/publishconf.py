@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'https://mlwhiz.github.io'
+SITEURL = 'http://mlwhiz.github.io'
 
 DELETE_OUTPUT_DIRECTORY = False
 

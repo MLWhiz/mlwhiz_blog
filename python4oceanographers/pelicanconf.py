@@ -10,7 +10,7 @@ SITENAME = u'mlwhiz'
 SITESUBTITLE = u'Turning data into insights'
 # Change in publishconf.py and ignore the WARNING.  This is needed so you
 # can inspect the site using a web-server at locahost.
-SITEURL = 'https://mlwhiz.github.io'
+SITEURL = 'http://mlwhiz.github.io'
 RELATIVE_URLS = False
 # Times and dates.
 DEFAULT_DATE_FORMAT = '%b %d, %Y'
