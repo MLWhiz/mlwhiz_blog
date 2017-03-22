@@ -8,7 +8,7 @@ description: How to think like a Data Scientist. Pitfalls and mistakes young dat
 Keywords: data scientist, think,pitfalls
 
 <div style="margin-top: 9px; margin-bottom: 10px;">
-<center><img src="/images/thinklikeds.png"  height="400" width="500" ></center>
+<center><img src="/images/thinklikeds.png"  height="400" width="700" ></center>
 </div>
 
 A data scientist needs to be Critical and always on a lookout of something that misses others. So here are some advices that one can include in day to day data science work to be better at their work:

@@ -6,7 +6,7 @@ Category: Python, bash, tools
 Tags:  bash commands, bash for data science
 description: This post provides an intermediate introduction to the basics of awk and how it can be integrated into daily data science work-flow.
 Keywords: Bash, awk, sed, groupbyawk, filter awk
-  <div class="entry-content"><p>Yesterday I got introduced to awk programming on the shell and is it cool. 
+<div class="entry-content"><p>Yesterday I got introduced to awk programming on the shell and is it cool.
 It lets you do stuff on the command line which you never imagined. As a matter of fact, it's a whole data analytics software in itself when you think about it. You can do selections, groupby, mean, median, sum, duplication, append. You just ask. There is no limit actually.</p>
 <p>And it is easy to learn.</p>
 <p>In this post, I will try to give you a brief intro about how you could add awk to your daily work-flow.</p>
@@ -41,7 +41,7 @@ It lets you do stuff on the command line which you never imagined. As a matter o
 <li>An optional END segment: In the end part we do something we want to do when we have reached the end of file.</li>
 </div>
 
-<p>An awk command is called on a file using: 
+<p>An awk command is called on a file using:
 <pre style="font-size:60%; padding:7px; margin:0em;">
 <code class="bash">awk 'BEGIN{SOMETHING HERE} {SOMETHING HERE: could put Multiple Blocks Like this} END {SOMETHING HERE}' file.txt
 </code></pre>
@@ -62,7 +62,7 @@ You also need to know about these preinitialized variables that awk keeps track 
 <p><br></p>
 <p>So there is a begin block. Remember before we read any line. We initialize sum to 0 and FS to ",".</p>
 <div class="no-mathjax">
-Now as awk reads its input line by line it increments sum by the value in column 5(as specified by $5). 
+Now as awk reads its input line by line it increments sum by the value in column 5(as specified by $5).
 </div>
 
 <p>Note that there is no pattern specified here so awk will do the action for every line. </p>
@@ -122,7 +122,7 @@ I want to filter records for players who who earn more than 22 M in 2013 just be
 </pre>
 <br>
 <div class="no-mathjax">
-Cool right. Now let me explain it a little bit. The part in the command "$5&gt;=22000000 &amp;&amp; $1==2013" is called a pattern. It says that print this line($0) if and only if the Salary($5) is more than 22M and(&amp;&amp;) year($1) is equal to 2013. If the incoming record(line) does not satisfy this pattern it never reaches the inner block. 
+Cool right. Now let me explain it a little bit. The part in the command "$5&gt;=22000000 &amp;&amp; $1==2013" is called a pattern. It says that print this line($0) if and only if the Salary($5) is more than 22M and(&amp;&amp;) year($1) is equal to 2013. If the incoming record(line) does not satisfy this pattern it never reaches the inner block.
 </div>
 So Now you could do basic Select SQL at the command line only if you had:</p>
 <p><strong>The logic Operators:</strong>
@@ -218,7 +218,7 @@ cat Salaries.csv | cut -d "," -f 5 > A.txt
 FILENAME="A.txt"
 
 # The first awk counts the number of lines which are numeric. We use a regex here to check if the column is numeric or not.
-# ';' stands for Synchronous execution i.e sort only runs after the awk is over. 
+# ';' stands for Synchronous execution i.e sort only runs after the awk is over.
 # The output of both commands are given to awk command which does the whole work.
 # So Now the first line going to the second awk is the number of lines in the file which are numeric.
 # and from the second to the end line the file is sorted.

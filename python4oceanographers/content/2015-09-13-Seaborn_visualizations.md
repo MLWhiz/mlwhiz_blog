@@ -1,18 +1,18 @@
-Title: Create basic graph visualizations with SeaBorn- The Most Awesome Python Library For Visualization yet 
+Title: Create basic graph visualizations with SeaBorn- The Most Awesome Python Library For Visualization yet
 date:  2015-09-13 04:43
 comments: true
 slug: seaborn_visualizations
 Category: Python, Visualization, Statistics
-Tags: Python Visualizations, Seaborn, Matplotlib, ggplot2, stanford software seaborn, regplot, lmplot seaborn, pairplot seaborn, 
-description: This post provides a template to use Seaborn to create customized plots. 
+Tags: Python Visualizations, Seaborn, Matplotlib, ggplot2, stanford software seaborn, regplot, lmplot seaborn, pairplot seaborn,
+description: This post provides a template to use Seaborn to create customized plots.
 Keywords: Python Visualizations, Seaborn, Matplotlib, ggplot2, stanford software seaborn, regplot, lmplot seaborn, pairplot seaborn, best python visualizations, best way to create python visuals, python visuals better than ggplot2, barplot, scatterplot, lineplot, pairplot
 
-When it comes to data preparation and getting acquainted with data, the **one step we normally skip is the data visualization**. 
+When it comes to data preparation and getting acquainted with data, the **one step we normally skip is the data visualization**.
 While a part of it could be attributed to the **lack of good visualization tools** for the platforms we use, most of us also **get lazy** at times.
 
-Now as we know of it Python never had any good Visualization library. For most of our plotting needs, I would read up blogs, hack up with StackOverflow solutions and haggle with [Matplotlib](http://matplotlib.org/) documentation each and every time I needed to make a simple graph. This led me to think that a **Blog post to create common Graph types** in Python is in order. But being the procrastinator that I am it always got pushed to the back of my head. 
+Now as we know of it Python never had any good Visualization library. For most of our plotting needs, I would read up blogs, hack up with StackOverflow solutions and haggle with [Matplotlib](http://matplotlib.org/) documentation each and every time I needed to make a simple graph. This led me to think that a **Blog post to create common Graph types** in Python is in order. But being the procrastinator that I am it always got pushed to the back of my head.
 
-But, yesterday I got introduced to [**Seaborn**](http://stanford.edu/~mwaskom/software/seaborn/) and I must say I am **quite impressed** with it. It makes **beautiful graphs** that are in my opinion **better than R's [ggplot2](http://ggplot2.org/)**. Gives you enough options to **customize** and the best part is that it is so **easy to learn**. 
+But, yesterday I got introduced to [**Seaborn**](http://stanford.edu/~mwaskom/software/seaborn/) and I must say I am **quite impressed** with it. It makes **beautiful graphs** that are in my opinion **better than R's [ggplot2](http://ggplot2.org/)**. Gives you enough options to **customize** and the best part is that it is so **easy to learn**.
 
 So I am finally writing this blog post with a basic **purpose of creating a code base** that provides me with ready to use codes which could be put into analysis in a fairly straight-forward manner.
 
@@ -40,19 +40,19 @@ tips.head()
 ## Scatterplot With Regression Line
 
 Now let us work on visualizing this data.
-We will use the [**regplot**](http://stanford.edu/~mwaskom/software/seaborn/generated/seaborn.regplot.html#seaborn.regplot) option in seaborn. 
+We will use the [**regplot**](http://stanford.edu/~mwaskom/software/seaborn/generated/seaborn.regplot.html#seaborn.regplot) option in seaborn.
 
 <pre style="font-size:80%; padding:7px; margin:0em;">
 <code class="python"># We dont Probably need the Gridlines. Do we? If yes comment this line
-sns.set(style="ticks") 
+sns.set(style="ticks")
 
-# Here we create a matplotlib axes object. The extra parameters we use 
+# Here we create a matplotlib axes object. The extra parameters we use
 # "ci" to remove confidence interval
-# "marker" to have a x as marker. 
+# "marker" to have a x as marker.
 # "scatter_kws" to provide style info for the points.[s for size]
 # "line_kws" to provide style info for the line.[lw for line width]
 
-g = sns.regplot(x="tip", y="total_bill", data=tips, ci = False, 
+g = sns.regplot(x="tip", y="total_bill", data=tips, ci = False,
 	scatter_kws={"color":"darkred","alpha":0.3,"s":90},
 	line_kws={"color":"g","alpha":0.5,"lw":4},marker="x")
 
@@ -119,9 +119,9 @@ for ax,title in zip(g.axes.flat,titles):
 </div>
 
 <div style="color:black; background-color: #E9DAEE;">
-<a href="http://stanford.edu/~mwaskom/software/seaborn/tutorial/color_palettes.html#building-color-palettes-with-color-palette"><strong>A side Note on Palettes</strong></a>:<br> 
+<a href="http://stanford.edu/~mwaskom/software/seaborn/tutorial/color_palettes.html#building-color-palettes-with-color-palette"><strong>A side Note on Palettes</strong></a>:<br>
 You can build your own color palettes using <strong>color_palette()</strong> function.
-color_palette() will accept the name of any <strong>seaborn palette</strong> or <a href="http://matplotlib.org/users/colormaps.html"><strong>matplotlib colormap</strong></a>(except jet, which you should never use). It can also take a <strong>list of colors</strong> specified in any valid matplotlib format (RGB tuples, <strong>hex color codes</strong>, or HTML color names). 
+color_palette() will accept the name of any <strong>seaborn palette</strong> or <a href="http://matplotlib.org/users/colormaps.html"><strong>matplotlib colormap</strong></a>(except jet, which you should never use). It can also take a <strong>list of colors</strong> specified in any valid matplotlib format (RGB tuples, <strong>hex color codes</strong>, or HTML color names).
 The return value is always a list of RGB tuples. This allows you to use your own color palettes in graph.
 </div>
 
@@ -132,8 +132,8 @@ The return value is always a list of RGB tuples. This allows you to use your own
 
 flatui = ["#9b59b6", "#3498db", "#95a5a6", "#e74c3c", "#34495e", "#2ecc71"]
 
-# This Function takes as input a custom palette 
-g = sns.barplot(x="sex", y="tip", hue="day", 
+# This Function takes as input a custom palette
+g = sns.barplot(x="sex", y="tip", hue="day",
 	palette=sns.color_palette(flatui),data=tips,ci=None)
 
 # remove the top and right line in graph
@@ -142,7 +142,7 @@ sns.despine()
 # Set the size of the graph from here
 g.figure.set_size_inches(12,7)
 # Set the Title of the graph from here
-g.axes.set_title('Do We tend to \nTip high on Weekends?', 
+g.axes.set_title('Do We tend to \nTip high on Weekends?',
 	fontsize=34,color="b",alpha=0.3)
 # Set the xlabel of the graph from here
 g.set_xlabel("Gender",size = 67,color="g",alpha=0.5)
@@ -158,8 +158,8 @@ g.tick_params(labelsize=14,labelcolor="black")
 
 ## Histograms and Distribution Diagrams
 
-They form another part of my workflow. Lets plot the normal Histogram using seaborn. 
-For this we will use the [**distplot**](http://stanford.edu/~mwaskom/software/seaborn/generated/seaborn.distplot.html#seaborn.distplot) function. This function combines the matplotlib hist function (with automatic calculation of a good default bin size) with the seaborn kdeplot() function. 
+They form another part of my workflow. Lets plot the normal Histogram using seaborn.
+For this we will use the [**distplot**](http://stanford.edu/~mwaskom/software/seaborn/generated/seaborn.distplot.html#seaborn.distplot) function. This function combines the matplotlib hist function (with automatic calculation of a good default bin size) with the seaborn kdeplot() function.
 It can also fit **scipy.stats** distributions and plot the estimated PDF over the data.
 
 <pre style="font-size:80%; padding:7px; margin:0em;">
@@ -168,8 +168,8 @@ x = np.random.normal(size=1000)
 
 sns.set_context("poster")
 sns.set_style("ticks")
-# This  Function creates a normed Histogram by default. 
-# If we use the parameter kde=False and norm_hist=False then 
+# This  Function creates a normed Histogram by default.
+# If we use the parameter kde=False and norm_hist=False then
 # we will be using a count histogram
 
 g=sns.distplot(x,
@@ -244,7 +244,7 @@ iris.head()
 
 <pre style="font-size:80%; padding:7px; margin:0em;">
 <code class="python"># Create a Pairplot
-g = sns.pairplot(iris,hue="species",palette="muted",size=5, 
+g = sns.pairplot(iris,hue="species",palette="muted",size=5,
 	vars=["sepal_width", "sepal_length"],kind='reg',markers=['o','x','+'])
 
 # To change the size of the scatterpoints in graph
@@ -256,7 +256,7 @@ sns.despine()
 plt.subplots_adjust(top=0.9)
 
 # Set the Title of the graph from here
-g.fig.suptitle('Relation between Sepal Width and Sepal Length', 
+g.fig.suptitle('Relation between Sepal Width and Sepal Length',
 	fontsize=34,color="b",alpha=0.3)
 </code></pre>
 
@@ -273,7 +273,18 @@ If you have **any more ideas** on how to use Seaborn or **which graphs should i 
 
 I will definitely try to add to this post as I start using more visualizations and encounter other libraries as good as seaborn.
 
-Till then ciao!!
+Also since this is my first visualization post on this blog, I would like to call out some of the most awesome visualization books out there, since I like books:
+
+
+<div style="margin-left:1em ; text-align: center;">
+<a target="_blank"  href="https://www.amazon.com/gp/product/1930824130/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1930824130&linkCode=as2&tag=mlwhizcon-20&linkId=32575b0a314fb37f8728123f098d3e47"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1930824130&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=mlwhizcon-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=mlwhizcon-20&l=am2&o=1&a=1930824130" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+</t></t>
+<a target="_blank"  href="https://www.amazon.com/gp/product/1119002257/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1119002257&linkCode=as2&tag=mlwhizcon-20&linkId=9e0aa9b9b8fcf4c3d2bec136e3b10175"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1119002257&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=mlwhizcon-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=mlwhizcon-20&l=am2&o=1&a=1119002257" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+</div>
+
+Both of these are awesome reads. The first one is a classic on which most of the other visualization work is based. The other one takes a highly practical approach to storytelling with data.
+
+
 
 
 

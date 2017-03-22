@@ -6,8 +6,10 @@
 
 <div>
   <article class="hentry" role="article">
+
     {% include '_includes/article.html' %}
-    {% include '_includes/ad_sense.html' %}
+
+    {% include '_includes/amazon_bottom_banner.html' %}
     <footer>
       {% include '_includes/article_infos.html' %}
       {% include '_includes/sharing.html' %}
@@ -20,5 +22,8 @@
     <div id="disqus_thread" aria-live="polite">{% include '_includes/disqus_thread.html' %}</div>
   </section>
   {% endif %}
+  <section>
+  {% include '_includes/recommendation_ad_unit.html' %}
+  </section>
 </div>
 {% endblock %}
