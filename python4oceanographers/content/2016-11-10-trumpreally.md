@@ -3,7 +3,7 @@ date:  2016-11-10 04:43
 comments: true
 slug: trump_really
 Category: Statistics
-Tags: 
+Tags:
 description: Rant against trump and surveys
 Keywords: surveys,biases
 
@@ -40,7 +40,9 @@ This election essentially provided us with two different types of bias that coul
 
 <br>
 
-### Lie Bias: 
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=c4ca54df-6d53-4362-92c0-13cb9977639e"></script>
+
+### Lie Bias:
  People lied in the surveys. That much is certain. To say that they would support Trump was shameful to a lot of people. This bias could be linked to the response Bias in a way but here the people did not lie because they wanted to appease the questioner, they lied to appease themselves.
 
 <br>

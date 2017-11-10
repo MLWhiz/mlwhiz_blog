@@ -1,0 +1,61 @@
+## Topics to blog about:
+
+DAILY DOSE OF DATA SCIENCE
+
+###Algorithms:
+
+-- 1. word2vec1
+2. word2vec second part understanding of algo
+3. Graph Algos : Breadth first search
+4. Dynamic programming
+
+###Statistics:
+1. p value intuition
+2. Gamma distribution intuition
+3. stat110 distributions
+4. hypothesis testing
+5. prior posterior
+6. conjugate prior
+
+etc..
+
+###Python:
+1. tips to be better?
+2. BEST SYNTAX THINGS
+3.
+
+###R:
+
+
+
+###Machine Learning:
+
+1. Intuitive SVM(From quora)
+-- 2. 7 lines of code for deep learning model pretrained images.... DONE
+3. keras how to build model
+4. what is lstm
+5. logloss trick
+6. ensemble - Stacking
+
+###Bash:
+
+
+
+
+###BigData:
+
+
+
+###Other:
+
+
+
+##BIG ONES
+
+javascript and d3.js
+SQL Post
+lazy programmer
+april fool?
+raspberry pi
+
+

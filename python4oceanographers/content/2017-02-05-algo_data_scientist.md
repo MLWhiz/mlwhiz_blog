@@ -21,17 +21,17 @@ As a data scientist I believe that a lot of work has to be done before Classific
 - **Reservoir Sampling** :* Say you have a stream of items of large and unknown length that we can only iterate over once. Create an algorithm that randomly chooses an item from this stream such that each item is equally likely to be selected.*
 
 
-## 2. **Map-Reduce. If you want to work with the whole data**. 
+## 2. **Map-Reduce. If you want to work with the whole data**.
 
 Can be used for feature creation. For Example: I had a use case where I had a graph of 60 Million customers and 130 Million accounts. Each account was connected to other account if they had the Same SSN or Same Name+DOB+Address. I had to find customer ID’s for each of the accounts. On a single node parsing such a graph took more than 2 days. On a Hadoop cluster of 80 nodes running a* Connected Component Algorithm *took less than 24 minutes. On Spark it is even faster.
 
 
 
-##3. **Graph Algorithms.** 
+##3. **Graph Algorithms.**
 
 Recently I was working on an optimization problem which was focussed on finding shortest distance and routes between two points in a store layout. Routes which don’t pass through different aisles, so we cannot use euclidean distances. We solved this problem by considering turning points in the store layout and the* djikstra’s Algorithm.*
 
-
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=c4ca54df-6d53-4362-92c0-13cb9977639e"></script>
 
 ##4. **Feature Selection.**
 
@@ -42,7 +42,7 @@ Recently I was working on an optimization problem which was focussed on finding 
 
 
 
-##5. **Algorithms to work efficiently.** 
+##5. **Algorithms to work efficiently.**
 
 Apart from these above algorithms sometimes you may need to write your own algorithms. Now I think of big algorithms as a combination of small but powerful algorithms. You just need to have idea of these algorithms to make a more better/efficient product. So some of these powerful algorithms which can help you are:
 - **Recursive Algorithms: **Binary search algorithm.

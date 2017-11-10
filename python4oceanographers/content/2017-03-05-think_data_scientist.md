@@ -1,11 +1,12 @@
-Title: How to think like a Data Scientist
+Title: Top advice for a Data Scientist
 date:  2017-03-05 04:43
 comments: true
 slug: think_like_a_data_scientist
-Category: statistics,data science
+Category: Data Science, Statistics, Resources, Learning, Books, Python, Distributions, Statistical Inference, hadoop, spark, deep learning
+Tags: Data Science, Statistics, Resources, Learning, Books, Python, Distributions, Statistical Inference, hadoop, spark, deep learning
 Tags:  statistics,data science
-description: How to think like a Data Scientist. Pitfalls and mistakes young data scientists make.
-Keywords: data scientist, think,pitfalls
+description: How to think like a Data Scientist. Pitfalls and mistakes young data scientists make. Top Advice for a data scientist.
+Keywords: data scientist, think,pitfalls, Learn Deep Learning, Learn Statistics, Learn Data science, Learn Big Data, Learn Bash, Learn Linux, Learn Spark, Learn Linear Algebra,Data Science, Statistics, Resources, Learning, Books, Python, Distributions, Statistical Inference, hadoop, spark, deep learning, learn hadoop, top data science resources, top machine learning resources, top ai resources, top learning resources for data science, best resources for data science, great resources for data science, awesome resources for data science,Top Advice for a data scientist,Pitfalls and mistakes data science, think like data scientist
 
 <div style="margin-top: 9px; margin-bottom: 10px;">
 <center><img src="/images/thinklikeds.png"  height="400" width="700" ></center>
@@ -35,6 +36,8 @@ Another example: fab.com started up as fabulis.com, a site to help gay men meet 
 
 - **Beware of Vanity metrics** For example, # of active users by itself doesn't divulge a lot of information. I would rather say "5% MoM increase in active users" rather than saying " 10000 active users". Even that is a vanity metric as active users would always increase. I would rather keep a track of percentage of users that are active to know how my product is performing.
 - Try to find out a **metric that ties with the business goal**. For example, Average Sales/User for a particular month.
+
+<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=c4ca54df-6d53-4362-92c0-13cb9977639e"></script>
 
 ##5. Statistics may lie too
 

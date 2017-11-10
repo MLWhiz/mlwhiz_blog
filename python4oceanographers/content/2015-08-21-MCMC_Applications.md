@@ -19,3 +19,5 @@ Look out for these two books to learn more about MCMC. I have not yet read them 
 </div>
 
 Both these books are pretty high level and hard on math. But these are the best texts out there too. :)
+
+Apart from that I also found a course on **[Bayesian Statistics on Coursera](https://click.linksynergy.com/link?id=lVarvwc5BD0&offerid=495576.8910375858&type=2&murl=https%3A%2F%2Fwww.coursera.org%2Flearn%2Fbayesian)**. In the process of doing it right now so couldn't really comment on it. But since I had done an course on **[Inferential Statistics](https://click.linksynergy.com/link?id=lVarvwc5BD0&offerid=495576.8839843074&type=2&murl=https%3A%2F%2Fwww.coursera.org%2Flearn%2Finferential-statistics-intro)** taught by the same professor before(Mine Çetinkaya-Rundel), I am very hopeful for this course. Let's see.
