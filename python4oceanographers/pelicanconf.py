@@ -97,7 +97,8 @@ TWITTER_SHOW_FOLLOWER_COUNT = 'true'
 FEED_DOMAIN = 'http://mlwhiz.github.io'
 FEED_ATOM = 'atom.xml'
 FEED_RSS = "feed.rss"
-
+RSS_FEED_SUMMARY_ONLY = True
+FEED_MAX_ITEMS = 10
 # Search
 SEARCH_BOX = True
 
