@@ -5,11 +5,15 @@ slug: MCMC_Algorithms_Cryptography
 Category: Statistics
 Tags: Statistics,python
 description: The way MCMC Algorithm Can Be Applied to Problems with infinite state sizes. Worked on Cryptography Substitution Cipher and the Knapsack Applications in this blog post.
-Keywords: Statistics, Machine Learning, MCMC, Bayesian Learning, Data Science, Monte carlo Markov Chain, Cryptography, Knapsack
+Keywords: Statistics, Machine Learning, MCMC, Bayesian Learning, Data Science, Monte carlo Markov Chain, Cryptography, Knapsack,metropolis algorithm explained,mcmc explained, metropolis hastings explained
 
 {% notebook 2015-08-21-MCMC_Applications.ipynb cells[1:] %}
 
-Look out for these two books to learn more about MCMC. I have not yet read them whole but still I liked whatever I read:
+One of the newest and best resources that you can keep an eye on is the [Bayesian Methods for Machine Learning](https://www.coursera.org/specializations/aml?siteID=lVarvwc5BD0-AqkGMb7JzoCMW0Np1uLfCA&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0) course in the [Advanced machine learning specialization](https://www.coursera.org/specializations/aml?siteID=lVarvwc5BD0-AqkGMb7JzoCMW0Np1uLfCA&utm_content=2&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0) created jointly by Kazanova(Number 3 Kaggler at the time of writing)
+
+Apart from that I also found a course on **[Bayesian Statistics on Coursera](https://click.linksynergy.com/link?id=lVarvwc5BD0&offerid=495576.8910375858&type=2&murl=https%3A%2F%2Fwww.coursera.org%2Flearn%2Fbayesian)**. In the process of doing it right now so couldn't really comment on it. But since I had done an course on **[Inferential Statistics](https://click.linksynergy.com/link?id=lVarvwc5BD0&offerid=495576.8839843074&type=2&murl=https%3A%2F%2Fwww.coursera.org%2Flearn%2Finferential-statistics-intro)** taught by the same professor before(Mine Çetinkaya-Rundel), I am very hopeful for this course. Let's see.
+
+Also look out for these two books to learn more about MCMC. I have not yet read them whole but still I liked whatever I read:
 
 <div style="margin-left:1em ; text-align: center;">
 
@@ -19,5 +23,3 @@ Look out for these two books to learn more about MCMC. I have not yet read them 
 </div>
 
 Both these books are pretty high level and hard on math. But these are the best texts out there too. :)
-
-Apart from that I also found a course on **[Bayesian Statistics on Coursera](https://click.linksynergy.com/link?id=lVarvwc5BD0&offerid=495576.8910375858&type=2&murl=https%3A%2F%2Fwww.coursera.org%2Flearn%2Fbayesian)**. In the process of doing it right now so couldn't really comment on it. But since I had done an course on **[Inferential Statistics](https://click.linksynergy.com/link?id=lVarvwc5BD0&offerid=495576.8839843074&type=2&murl=https%3A%2F%2Fwww.coursera.org%2Flearn%2Finferential-statistics-intro)** taught by the same professor before(Mine Çetinkaya-Rundel), I am very hopeful for this course. Let's see.

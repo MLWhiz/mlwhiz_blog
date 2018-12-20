@@ -5,12 +5,14 @@ slug: seaborn_visualizations
 Category: Python, Visualization, Statistics
 Tags: Python Visualizations, Seaborn, Matplotlib, ggplot2, stanford software seaborn, regplot, lmplot seaborn, pairplot seaborn,
 description: This post provides a template to use Seaborn to create customized plots.
-Keywords: Python Visualizations, Seaborn, Matplotlib, ggplot2, stanford software seaborn, regplot, lmplot seaborn, pairplot seaborn, best python visualizations, best way to create python visuals, python visuals better than ggplot2, barplot, scatterplot, lineplot, pairplot
+Keywords: Python Visualizations, Seaborn, Matplotlib, ggplot2, stanford software seaborn, regplot, lmplot seaborn, pairplot seaborn, best python visualizations, best way to create python visuals, python visuals better than ggplot2, barplot, scatterplot, lineplot, pairplot,seaborn scatter_kws,seaborn set title,seaborn plot title,seaborn regplot example,scatter_kws seaborn,seaborn regplot title,seaborn lmplot figure size,seaborn barplot title,seaborn title,seaborn regplot,seaborn xlabel,seaborn figure size,add title to seaborn plot,seaborn lmplot title,seaborn figure title,seaborn histogram,seaborn jointplot title,set title seaborn,seaborn distplot title,seaborn set figure size,sns.distplot title,sns distplot title,sns regplot,sns.barplot title,sns.regplot,sns.lmplot,sns figure size,sns plot title,sns barplot title,sns regplot hue,sns pairplot title,sns.lmplot figure size,sns barplot size,sns regplot color,sns.regplot example
 
 When it comes to data preparation and getting acquainted with data, the **one step we normally skip is the data visualization**.
 While a part of it could be attributed to the **lack of good visualization tools** for the platforms we use, most of us also **get lazy** at times.
 
-Now as we know of it Python never had any good Visualization library. For most of our plotting needs, I would read up blogs, hack up with StackOverflow solutions and haggle with [Matplotlib](http://matplotlib.org/) documentation each and every time I needed to make a simple graph. This led me to think that a **Blog post to create common Graph types** in Python is in order. But being the procrastinator that I am it always got pushed to the back of my head.
+Now as we know of it Python never had any good Visualization library. For most of our plotting needs, I would read up blogs, hack up with StackOverflow solutions and haggle with [Matplotlib](http://matplotlib.org/) documentation each and every time I needed to make a simple graph. This led me to think that a **Blog post to create common Graph types** in Python is in order. But being the procrastinator that I am it always got pushed to the back of my head. 
+
+One thing that helped me in pursuit of my data visualization needs in Python was this awesome course about [Data Visualization and applied plotting](https://www.coursera.org/specializations/data-science-python?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-SAQTYQNKSERwaOgd07RrHg&siteID=lVarvwc5BD0-SAQTYQNKSERwaOgd07RrHg&utm_content=3&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0) from University of Michigan which is a part of a pretty good [Data Science Specialization with Python](https://www.coursera.org/specializations/data-science-python?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-SAQTYQNKSERwaOgd07RrHg&siteID=lVarvwc5BD0-SAQTYQNKSERwaOgd07RrHg&utm_content=3&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0) in itself. Highly Recommended.
 
 But, yesterday I got introduced to [**Seaborn**](http://stanford.edu/~mwaskom/software/seaborn/) and I must say I am **quite impressed** with it. It makes **beautiful graphs** that are in my opinion **better than R's [ggplot2](http://ggplot2.org/)**. Gives you enough options to **customize** and the best part is that it is so **easy to learn**.
 
@@ -275,18 +277,7 @@ If you have **any more ideas** on how to use Seaborn or **which graphs should i 
 
 I will definitely try to add to this post as I start using more visualizations and encounter other libraries as good as seaborn.
 
-Also since this is my first visualization post on this blog, I would like to call out some of the most awesome visualization books out there, since I like books:
-
-
-<div style="margin-left:1em ; text-align: center;">
-<a target="_blank"  href="https://www.amazon.com/gp/product/1930824130/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1930824130&linkCode=as2&tag=mlwhizcon-20&linkId=32575b0a314fb37f8728123f098d3e47"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1930824130&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=mlwhizcon-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=mlwhizcon-20&l=am2&o=1&a=1930824130" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-</t></t>
-<a target="_blank"  href="https://www.amazon.com/gp/product/1119002257/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1119002257&linkCode=as2&tag=mlwhizcon-20&linkId=9e0aa9b9b8fcf4c3d2bec136e3b10175"><img border="0" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1119002257&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=mlwhizcon-20" ></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=mlwhizcon-20&l=am2&o=1&a=1119002257" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-</div>
-
-Both of these are awesome reads. The first one is a classic on which most of the other visualization work is based. The other one takes a highly practical approach to storytelling with data.
-
-
+Also since this is my first visualization post on this blog, I would like to call out a good course about [Data Visualization and applied plotting](https://www.coursera.org/specializations/data-science-python?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-SAQTYQNKSERwaOgd07RrHg&siteID=lVarvwc5BD0-SAQTYQNKSERwaOgd07RrHg&utm_content=3&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0) from University of Michigan which is a part of a pretty good [Data Science Specialization with Python](https://www.coursera.org/specializations/data-science-python?ranMID=40328&ranEAID=lVarvwc5BD0&ranSiteID=lVarvwc5BD0-SAQTYQNKSERwaOgd07RrHg&siteID=lVarvwc5BD0-SAQTYQNKSERwaOgd07RrHg&utm_content=3&utm_medium=partners&utm_source=linkshare&utm_campaign=lVarvwc5BD0) in itself. Do check it out.
 
 
 
